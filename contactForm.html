@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function showMessage() {
+        alert("Talk To You Soon!");
+      }
+    </script>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <h2>Contact Form</h2>
+
+    <div class="grid-container">
+      <div class="grid-item">Name:</div>
+      <div class="grid-item"><input type="text" id="name" name="name" /></div>
+
+      <div class="grid-item">Email:</div>
+      <div class="grid-item">
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div class="grid-item">Message:</div>
+      <div class="grid-item">
+        <textarea id="message" name="message"></textarea>
+      </div>
+
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <input type="submit" value="Submit" onclick="showMessage()" />
+      </div>
+    </div>
+  </body>
+</html>
