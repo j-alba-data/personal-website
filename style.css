@@ -3,7 +3,6 @@
   overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
 .nav a {
   float: left;
   color: #f2f2f2;
@@ -13,16 +12,9 @@
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .nav a:hover {
   background-color: #ddd;
   color: black;
-}
-
-/* Add a color to the active/current link */
-.nav a.active {
-  background-color: #04aa6d;
-  color: white;
 }
 
 img {
@@ -55,6 +47,7 @@ p {
 body {
   margin: 20px;
   text-align: center;
+  background-color: lightgrey;
 }
 
 .footer {
@@ -64,6 +57,7 @@ body {
   width: 100%;
   height: 50px;
   background-color: darkgrey;
+  background-color: rgba(169, 169, 169, 0.9);
   color: white;
   text-align: center;
 }
@@ -80,15 +74,3 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* .grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-  justify-content: center;
-}
-
-.grid-item {
-  padding: 10px;
-} */

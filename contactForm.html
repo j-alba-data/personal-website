@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js"></script>
+    <title>Contact Form</title>
+    <style>
+      form {
+        border: 5px solid black;
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      input[type="submit"] {
+        width: 50%;
+      }
+    </style>
     <script>
-      function showMessage() {
-        alert("Talk To You Soon!");
+      function submitMessage() {
+        alert("Talk to you soon!");
       }
     </script>
-    <title>Contact Form</title>
   </head>
   <body>
-    <h2>Contact Form</h2>
-
-    <div class="grid-container">
-      <div class="grid-item">Name:</div>
-      <div class="grid-item"><input type="text" id="name" name="name" /></div>
-
-      <div class="grid-item">Email:</div>
-      <div class="grid-item">
-        <input type="email" id="email" name="email" />
-      </div>
-
-      <div class="grid-item">Message:</div>
-      <div class="grid-item">
-        <textarea id="message" name="message"></textarea>
-      </div>
-
-      <div class="grid-item"></div>
-      <div class="grid-item">
-        <input type="submit" value="Submit" onclick="showMessage()" />
-      </div>
-    </div>
+    <form>
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="email">Email:</label><br />
+      <input type="text" id="email" name="email" /><br /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message"></textarea><br /><br />
+      <input
+        type="submit"
+        id="submit"
+        value="Submit"
+        onclick="submitMessage()"
+      />
+    </form>
   </body>
 </html>
